@@ -5,7 +5,7 @@ export const Container = styled.div`
     justify-content:space-around;
     background-color:#1a1a1a;
     width:100%;
-    height:9.5vh;
+    height:9vh;
     padding-top:10px;
     padding-bottom:10px;
     float:left;
@@ -13,8 +13,8 @@ export const Container = styled.div`
     z-index:99;
 `
 export const LogoHeader = styled.img`
-    width:18vw;
-    height:9vh
+    width:16vw;
+    height:8vh
 `
 export const Menu = styled.nav`
     height:10vh;

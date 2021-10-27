@@ -14,8 +14,8 @@ export const Container = styled.div`
 `
 export const LogoHeader = styled.img`
     width:16vw;
-    height:8vh
-    cursor:pointer;
+    height:8vh;
+    cursor: pointer;
 `
 export const Menu = styled.nav`
     height:10vh;
@@ -28,7 +28,7 @@ export const Menu = styled.nav`
         list-style:none;
         cursor:pointer;
     }
-    }
+    
 `
 export const Link = styled.a`
     text-decoration:none;

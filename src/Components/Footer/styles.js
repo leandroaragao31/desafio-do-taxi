@@ -45,13 +45,13 @@ export const Footer_section = styled.section`
 `
 
 export const BoxSocial = styled.div`
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content:space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 20px 0 20px 0;
-
+    font-family: 'Roboto', sans-serif;
 `
 
 export const BoxAddress = styled.div`
@@ -64,6 +64,8 @@ export const BoxAddress = styled.div`
 
     h2{
         font-size: 2rem;
+        font-weight: 100;
+        text-transform: capitalize;
     }
 
     p{
@@ -76,12 +78,14 @@ export const ContainerLinks = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     width: 20%;
     margin: 0 0 0 3rem;
 
     h2{
         font-size: 2rem;
+        font-weight: 100;
+        text-transform: capitalize;
     }
 
 
@@ -94,6 +98,11 @@ export const BoxLinks = styled.div`
     align-items: center;
     width: 50%;
 
+    img{
+        margin: 0.500rem 0 0.100rem 0;
+    }
+    
+
     button{
         background-color: transparent;
         border: none;
@@ -101,7 +110,7 @@ export const BoxLinks = styled.div`
         font-size: 1rem;
         transition:0.7s;
         cursor:pointer;
-        margin-right: 2rem;
+        margin: 0.500rem 0 0.100rem 0;
 
         &:hover {
             color:#FFC125;
@@ -125,6 +134,8 @@ export const BoxNewsletter = styled.div`
         color: #ebebeb;
         font-weight: bold;
         padding: 10px 0px;
+        font-weight: 100;
+        text-transform: capitalize;
     }
 
     input{
@@ -135,6 +146,7 @@ export const BoxNewsletter = styled.div`
         padding: 10px;
         border-radius: 5px;
         border: 0px;
+        font-family: 'Roboto', sans-serif;
     }
 
     button{

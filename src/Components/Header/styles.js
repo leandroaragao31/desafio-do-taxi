@@ -11,6 +11,8 @@ export const Container = styled.div`
     float:left;
     position:fixed;
     z-index:99;
+    font-family: 'Nunito Sans', sans-serif;
+    
 `
 export const LogoHeader = styled.img`
     width:16vw;

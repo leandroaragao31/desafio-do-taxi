@@ -30,11 +30,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Roboto\: 100`,
+          `Roboto:wght: 100`,
           `limelight`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
-          `Nunito+Sans\: 200`,
-          `Montserrat\: 700`
+          `source sans pro: 300,400,400i,700`, // you can also specify font weights and styles
+          `Nunito+Sans: 200`,
+          `Montserrat: 700`
         ],
         display: 'swap'
       }

@@ -84,7 +84,7 @@ export function Main() {
             < Slide />
             <S.Division>
             </S.Division>
-            <S.SectionCardTaxi>
+            <S.SectionCardTaxi id="Taxi">
                 <S.ContainerCardTaxi>
                     <S.BoxTextCard>
                         <h2 className="h2branco">{titleour}</h2>
@@ -125,7 +125,7 @@ export function Main() {
                 </S.ContainerCardTaxi>
             </S.SectionCardTaxi>
             <S.SectionInfoTaxis>
-                <S.ContainerinfoTaxis>
+                <S.ContainerinfoTaxis id="Booking">
                     <S.BigBoxInfoTaxis>
                         <S.BoxTitleCardInfo>
                             <h2>{titlewhyride}</h2>

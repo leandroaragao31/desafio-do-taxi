@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
     display:flex;
     justify-content:space-around;
     background-color:#1a1a1a;
     width:100%;
-    height:9vh;
+    height:10vh;
     padding-top:10px;
     padding-bottom:10px;
     float:left;

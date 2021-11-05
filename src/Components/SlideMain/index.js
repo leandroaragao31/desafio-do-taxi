@@ -13,6 +13,7 @@ export function Slide() {
                 mains{
                     titlebooknow
                     titlenumberphone
+                    titleyoureveryday
                     titlepuscataxi
                     taxinormalfaixavermelha{
                         url
@@ -27,17 +28,18 @@ export function Slide() {
     `)
 
     const { taxinormalfaixavermelha, imgtaxinormal, titlepuscataxi,
-        titlenumberphone, titlebooknow } = data.alldata.mains[0]
+        titlenumberphone, titlebooknow, titleyoureveryday } = data.alldata.mains[0]
 
-    const settings = {
+    const setting = {
         dots: false,
         infinite: true,
-        speed: 600,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3500,
         pauseOnHover: true,
+        
     };
     return (
         <>
@@ -45,53 +47,78 @@ export function Slide() {
                 <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
                 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
             </Helmet>
-            <Slider {...settings}>
-            <S.Container>
-           
-                <S.SubContainer>
+            <Slider  {...setting}>
+                <S.Container>
+
+                    <S.SubContainer>
+                        <S.TitleContainer>
+                            <h2>{titlebooknow}</h2>
+                            <p>{titlenumberphone}</p>
+                        </S.TitleContainer>
+                        <figure>
+                            <S.Taximg src={imgtaxinormal.url} alt="" />
+                        </figure >
+                    </S.SubContainer>
+                         
+                        <S.TitleInput>{titlepuscataxi}</S.TitleInput>
+                        <S.InputContainer>
+                            <S.TitleBox>{titleyoureveryday}</S.TitleBox>
+                            <S.InputBox type="text" placeholder="PICKUP" />
+                            <S.InputBox type="text" placeholder="DROP" />
+                            <S.InputBox type="text" placeholder="WHEN" />
+                            <S.BtnSearch>SEARCH</S.BtnSearch>
+                        </S.InputContainer> 
+                        
                     
-                    <S.TitleContainer>
-                        <h2>{titlebooknow}</h2>
-                        <p>{titlenumberphone}</p>
-                    </S.TitleContainer>
-                    <figure>
-                        <S.Taximg src={imgtaxinormal.url} alt="" />
-                    </figure >
-                </S.SubContainer>
-                <S.SubContainer>
-                    <S.TitleInput>{titlepuscataxi}</S.TitleInput>
-                    <S.InputContainer>
-                        <S.InputBox type="text" placeholder="PICKUP" />
-                        <S.InputBox type="text" placeholder="DROP" />
-                        <S.InputBox type="text" placeholder="WHEN" />
-                        <button>SEARCH</button>
-                    </S.InputContainer>
+                </S.Container>
+                <S.Container>
+                    <S.SubContainer>
+                        <S.TitleContainer>
+                            <h2>{titlebooknow}</h2>
+                            <p>{titlenumberphone}</p>
+                        </S.TitleContainer>
 
-                </S.SubContainer>
-            </S.Container>
-            <S.Container>
-                <S.SubContainer>
-                    <S.TitleContainer>
-                        <h2>{titlebooknow}</h2>
-                        <p>{titlenumberphone}</p>
-                    </S.TitleContainer>
+                        <figure>
+                            <S.Taximg src={taxinormalfaixavermelha.url} alt="" />
+                        </figure >
+                    </S.SubContainer>
+                     
+                        <S.TitleInput>{titlepuscataxi}</S.TitleInput>
+                        <S.InputContainer>
+                            <S.TitleBox>{titleyoureveryday}</S.TitleBox>
+                            <S.InputBox type="text" placeholder="PICKUP" />
+                            <S.InputBox type="text" placeholder="DROP" />
+                            <S.InputBox type="text" placeholder="WHEN" />
+                            <S.BtnSearch>SEARCH</S.BtnSearch>
+                        </S.InputContainer>
 
-                    <figure>
-                        <S.Taximg src={taxinormalfaixavermelha.url} alt="" />
-                    </figure >
-                </S.SubContainer>
-                <S.SubContainer>
-                    <S.TitleInput>{titlepuscataxi}</S.TitleInput>
-                    <S.InputContainer>
-                        <S.InputBox type="text" placeholder="PICKUP" />
-                        <S.InputBox type="text" placeholder="DROP" />
-                        <S.InputBox type="text" placeholder="WHEN" />
-                        <button>SEARCH</button>
-                    </S.InputContainer>
+                    
 
-                </S.SubContainer>
-                
-            </S.Container>
+                </S.Container>
+                <S.Container>
+                    <S.SubContainer>
+                        <S.TitleContainer>
+                            <h2>{titlebooknow}</h2>
+                            <p>{titlenumberphone}</p>
+                        </S.TitleContainer>
+
+                        <figure>
+                            <S.Taximg src={imgtaxinormal.url} alt="" />
+                        </figure >
+                    </S.SubContainer>
+                     
+                        <S.TitleInput>{titlepuscataxi}</S.TitleInput>
+                        <S.InputContainer>
+                            <S.TitleBox>{titleyoureveryday}</S.TitleBox>
+                            <S.InputBox type="text" placeholder="PICKUP" />
+                            <S.InputBox type="text" placeholder="DROP" />
+                            <S.InputBox type="text" placeholder="WHEN" />
+                            <S.BtnSearch>SEARCH</S.BtnSearch>
+                        </S.InputContainer>
+
+                    
+
+                </S.Container>
             </Slider>
         </>
     )

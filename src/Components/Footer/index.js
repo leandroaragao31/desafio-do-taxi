@@ -86,7 +86,7 @@ export function Footer() {
 
 
     return (
-        <S.Container>
+        <S.Container id="Contact">
             <S.Footer_section>
                 <S.BoxSocial>
                     <S.BoxAddress>

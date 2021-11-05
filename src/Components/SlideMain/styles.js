@@ -22,7 +22,7 @@ export const TitleInput = styled.h2`
     font-size:28px;
     text-align:center;
     position:relative;
-    bottom:85vh;
+    bottom:79vh;
     left:23vw;
 `
 

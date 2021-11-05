@@ -161,6 +161,10 @@ export const BoxNewsletter = styled.div`
         font-weight: 600;
         border-radius: 5px;
         cursor:pointer;
+        transition: 1.5s ease-in-out;
+        &:hover{
+            background-color:#000;
+        }
     }
 
     

@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
+import { Slide } from '../SlideMain'
 
 
 export function Main() {
@@ -58,16 +59,11 @@ export function Main() {
 
     const {
         titlewithuloax,
-        titleyoureveryday,
         titlewhyride,
         titleuloaxfor,
         titletaxi,
         titlesecureand,
-        titlepuscataxi,
-        titleourapptoday,
         titleour,
-        titlenumberphone,
-        titledownload,
         titlecar3,
         titlecar2,
         titlecar1,
@@ -75,22 +71,19 @@ export function Main() {
         subtitleuloaxfor,
         subtitlesecureand,
         subtitleactthat,
-        btnbooknow,
-        btnsearch,
         imgtaxipequeno,
-        imgtaxinormal,
-        imgsmartphone,
         imgsemaforo,
         imgpontotaxi,
         imgcarteira,
-        imgcarrofundoamarelo,
-
-
+        
     } = data.alldata.mains[0]
 
 
     return (
         <S.Container>
+            < Slide />
+            <S.Division>
+            </S.Division>
             <S.SectionCardTaxi>
                 <S.ContainerCardTaxi>
                     <S.BoxTextCard>

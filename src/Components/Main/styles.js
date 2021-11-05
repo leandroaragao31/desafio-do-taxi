@@ -206,7 +206,7 @@ export const CardsInfoTaxis1 = styled.div`
             text-align: center;
             padding: 10px 0px;
             margin-top: 30px;
-            transition: all .3s ease-in-out;
+            transition:  0.8s ease-in-out;
             text-transform: uppercase;
             cursor: pointer;
 
@@ -268,7 +268,7 @@ export const CardsInfoTaxis2 =styled.div`
             text-align: center;
             padding: 10px 0px;
             margin-top: 30px;
-            transition: all .3s ease-in-out;
+            transition:  0.9s ease-in-out;
             text-transform: uppercase;
             cursor: pointer;
 
@@ -277,6 +277,9 @@ export const CardsInfoTaxis2 =styled.div`
             }
         }
     }
-
-
+`
+export const Division = styled.div`
+    background-color:#fff;
+    width:100%;
+    height:15vh;
 `

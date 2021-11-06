@@ -3,8 +3,8 @@ import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Slide } from '../SlideMain'
 
-
 export function Main() {
+
 
     const data = useStaticQuery(graphql`
     
@@ -50,6 +50,9 @@ export function Main() {
                     imgcarrofundoamarelo {
                       url
                     }
+                    taxinormalfaixavermelha {
+                        url
+                      }
                     btnbooknow
                     btnsearch
                 }
@@ -63,7 +66,13 @@ export function Main() {
         titleuloaxfor,
         titletaxi,
         titlesecureand,
+
+        titleourapptoday,
         titleour,
+        titledownload,
+
+        titleour,
+
         titlecar3,
         titlecar2,
         titlecar1,
@@ -72,6 +81,9 @@ export function Main() {
         subtitlesecureand,
         subtitleactthat,
         imgtaxipequeno,
+
+        imgsmartphone,
+
         imgsemaforo,
         imgpontotaxi,
         imgcarteira,
@@ -79,12 +91,21 @@ export function Main() {
     } = data.alldata.mains[0]
 
 
+
+
+
     return (
+
+        <S.Container id='Home'>
+            < Slide />
+            <S.SectionCardTaxi id='Taxi'>
+
         <S.Container>
             < Slide />
             <S.Division>
             </S.Division>
             <S.SectionCardTaxi id="Taxi">
+
                 <S.ContainerCardTaxi>
                     <S.BoxTextCard>
                         <h2 className="h2branco">{titleour}</h2>
@@ -124,12 +145,17 @@ export function Main() {
                     </S.BoxCardsTaxi>
                 </S.ContainerCardTaxi>
             </S.SectionCardTaxi>
+
+            <S.SectionInfoTaxis id='Booking'>
+                <S.ContainerinfoTaxis>
+
             <S.SectionInfoTaxis>
                 <S.ContainerinfoTaxis id="Booking">
+
                     <S.BigBoxInfoTaxis>
                         <S.BoxTitleCardInfo>
                             <h2>{titlewhyride}</h2>
-                            <h2 style={{color: '#f4db31' , marginLeft:'1.100rem'}}>{titlewithuloax}</h2>
+                            <h2 style={{ color: '#f4db31', marginLeft: '1.100rem' }}>{titlewithuloax}</h2>
                         </S.BoxTitleCardInfo>
                         <S.BoxCardsInfo>
                             <S.CardsInfoTaxis1>
@@ -176,6 +202,19 @@ export function Main() {
                     </S.BigBoxInfoTaxis>
                 </S.ContainerinfoTaxis>
             </S.SectionInfoTaxis>
+            <S.SectionPhone>
+                <S.ContainerImG back={imgcarrofundoamarelo.url}>
+                    <div className="BoxText">
+                        <div>
+                            <span className="TextBlack">{titledownload}</span>
+                            <span className="TextWhite">{titleourapptoday}</span>
+                        </div>
+                    </div>
+                    <div calssName="BoxPhone">
+                        <img style={{ width: '100%' }} src={imgsmartphone.url} alt="imagem de um smarth phone" />
+                    </div>
+                </S.ContainerImG>
+            </S.SectionPhone>
         </S.Container>
     )
 }

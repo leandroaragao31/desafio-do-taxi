@@ -1,9 +1,154 @@
 import styled from 'styled-components'
 
 
-export const Container =styled.div`
+export const Container = styled.div`
     width: 100%;
-    padding-top: 9vh;
+    padding-top: 71px;
+
+`
+
+export const SectionSlide = styled.section`
+    width: 100%;
+    height: 35.400rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    
+    
+
+`
+
+export const ContainerSectionSlide = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
+
+export const BoxSlide = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .BoxYellow{
+        width: 30%;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8ca11;
+        position: absolute;
+        bottom: 70%;
+        left: 21%;
+
+        .TextBOOK{
+            font-size:35px;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-family: 'Nunito Sans', sans-serif;
+            padding-bottom: 1rem;
+        }
+
+        .Number{
+            color: #000;
+            font-size:40px;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+
+    .SlideBox{
+        width: 30%;
+    }
+
+`
+
+export const BoxInputs = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    h2{
+        font-size: 25px; 
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 200;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .BoxSearch{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 2rem;
+        
+
+        span{
+            color: #000;
+            font-size: 30px; 
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 200;
+            padding: 20px 6px 6px 6px;
+
+        }
+
+
+        input{
+            background: #e1e1e1;
+            border-bottom: 1px solid #fffcf4;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            color: #000;
+            width: 90%;
+            height: 30px;
+            font-size: 20px;
+            padding: 6px 6px 6px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .BoxButton{
+
+            width: 100%;
+
+
+            button{
+            width: 25%;
+            float: right;
+            background-color: #353433;
+            color: #fefefe;
+            text-align: center;
+            padding: 17px 0px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: transparent;
+            margin-right: 22px;
+            transition: all .3s ease-in-out;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #f8ca11;
+                }
+            }
+        }
+        
+    }
 
 `
 
@@ -13,6 +158,7 @@ export const SectionCardTaxi = styled.section`
     justify-content: center;
     align-items: center;
     background-color: #161c1e;
+    margin-top: 6rem;
 `
 
 export const ContainerCardTaxi = styled.div`
@@ -24,7 +170,7 @@ export const ContainerCardTaxi = styled.div`
     padding:  2rem 0 4rem 0;
 `
 
-export const BoxTextCard =styled.div`
+export const BoxTextCard = styled.div`
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -112,14 +258,14 @@ export const CardTaxi = styled.div`
 
 `
 
-export const SectionInfoTaxis =styled.section`
+export const SectionInfoTaxis = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 `
 
-export const ContainerinfoTaxis =styled.div`
+export const ContainerinfoTaxis = styled.div`
     width: 73%;
     display: flex;
     justify-content: center;
@@ -127,7 +273,7 @@ export const ContainerinfoTaxis =styled.div`
 
 `
 
-export const BoxTitleCardInfo =styled.div`
+export const BoxTitleCardInfo = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -146,14 +292,14 @@ export const BoxTitleCardInfo =styled.div`
         background-color: #2b3436;
         width: 50%;
         height: 1px;
-        top: 8.500rem;
+        top: 5.5rem;
     }
 
     
 `
 
 
-export const BigBoxInfoTaxis =styled.div`
+export const BigBoxInfoTaxis = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -162,7 +308,7 @@ export const BigBoxInfoTaxis =styled.div`
 
 `
 
-export const BoxCardsInfo =styled.div`
+export const BoxCardsInfo = styled.div`
 
 `
 
@@ -218,7 +364,7 @@ export const CardsInfoTaxis1 = styled.div`
     }
 `
 
-export const CardsInfoTaxis2 =styled.div`
+export const CardsInfoTaxis2 = styled.div`
 
     width: 100%;
     display: flex;
@@ -278,8 +424,80 @@ export const CardsInfoTaxis2 =styled.div`
         }
     }
 `
+
+
+export const SectionPhone = styled.div`
+    width: 100%;
+    height: 47rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
+
+export const ContainerImG = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(${prop => prop.back});
+
+
+
+    .BoxText{
+       
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 76%;
+        height: 76%;
+        
+        div{
+            padding-left: 20rem;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: flex-start;
+
+
+
+        .TextBlack{
+            font-size: 50px;
+            color: #000;
+            font-family: 'Roboto', sans-serif; 
+            text-transform: uppercase;        
+        }
+        .TextWhite{
+            font-size: 50px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif; 
+            text-transform: uppercase;
+        }
+    }
+    
+}
+
+        
+
+
+    .BoxPhone{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
 export const Division = styled.div`
     background-color:#fff;
     width:100%;
     height:15vh;
+
 `

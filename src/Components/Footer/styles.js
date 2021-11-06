@@ -103,13 +103,12 @@ export const BoxLinks = styled.div`
     }
     
 
-    button{
-        background-color: transparent;
-        border: none;
+    a{
+        
+        text-decoration: none;
         color: #FFF;
         font-size: 1rem;
         transition:0.7s;
-        cursor:pointer;
         margin: 0.500rem 0 0.100rem 0;
 
         &:hover {

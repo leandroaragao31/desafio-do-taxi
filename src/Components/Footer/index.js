@@ -86,6 +86,9 @@ export function Footer() {
 
 
     return (
+
+        <S.Container>
+            <S.Footer_section id='Contact'>
         <S.Container id="Contact">
             <S.Footer_section>
                 <S.BoxSocial>
@@ -97,46 +100,46 @@ export function Footer() {
                         <h2>{titlelinks}</h2>
                         <S.BoxLinks>
                             <img src={imgcirclered.url} alt="imagem de um circulo vermelho" />
-                            <button>{btnhome}</button>
+                            <a href="#Home">{btnhome}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgcirclered.url} alt="imagem de um circulo vermelho" />
-                            <button>{btnabout}</button>
+                            <a href="">{btnabout}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgcirclered.url} alt="imagem de um circulo vermelho" />
-                            <button>{btntaxi}</button>
+                            <a href="#Taxi">{btntaxi}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgcirclered.url} alt="imagem de um circulo vermelho" />
-                            <button>{btnbooking}</button>
+                            <a href="#Booking">{btnbooking}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgcirclered.url} alt="imagem de um circulo vermelho" />
-                            <button>{btncontactus}</button>
+                            <a href="#Contact">{btncontactus}</a>
                         </S.BoxLinks>
                     </S.ContainerLinks>
                     <S.ContainerLinks>
                         <h2>{titlefollowus}</h2>
                         <S.BoxLinks>
                             <img src={imgfacebook.url} alt="facebook" />
-                            <button>{btnfacebook}</button>
+                            <a href="">{btnfacebook}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgtwitter.url} alt="twitter" />
-                            <button>{btntwitter}</button>
+                            <a href="">{btntwitter}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imglinkedin.url} alt="linkedin" />
-                            <button>{btnlinkedin}</button>
+                            <a href="">{btnlinkedin}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imgyoutube.url} alt="youtube" />
-                            <button>{btnyoutube}</button>
+                            <a href="">{btnyoutube}</a>
                         </S.BoxLinks>
                         <S.BoxLinks>
                             <img src={imginstagran.url} alt="instagram" />
-                            <button>{btninstagran}</button>
+                            <a href="">{btninstagran}</a>
                         </S.BoxLinks>
                     </S.ContainerLinks>
                     <S.BoxNewsletter>

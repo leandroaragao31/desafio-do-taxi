@@ -1,3 +1,22 @@
+
+import styled from "styled-components"
+
+
+export const Container = styled.section`
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: #1a1a1a;
+    color:#fff;
+`
+export const SubContainer = styled.div`
+   display:flex;
+    height:48vh;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+
 import styled from "styled-components";
 
 
@@ -15,15 +34,18 @@ export const SubContainer = styled.div`
     align-items:flex-start;
     margin-left:3vw;
     overflow:hidden;
-
 `
 
 export const TitleInput = styled.h2`
     font-size:28px;
+    position:relative;
+    bottom:55vh;
+    left:50vw;
     text-align:center;
     position:relative;
     bottom:79vh;
     left:23vw;
+
 `
 
 
@@ -32,6 +54,23 @@ export const TitleContainer = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
+
+    justify-content:center;
+    text-align:justify;
+    padding:2vw;
+    font-size:2vw;
+    width:29vw;
+    height:20vh;
+    position:relative;
+    left:8vw;
+
+    p{
+        color:#000;
+        padding-bottom:2vh;
+    }
+  
+`
+
     justify-content:space-between;
     padding:11px;
      margin-top:8vh; 
@@ -61,6 +100,7 @@ export const TitleBox = styled.h2`
 `
 
 
+
 export const InputContainer = styled.div`
     display:flex;
     flex-direction:column;
@@ -68,12 +108,22 @@ export const InputContainer = styled.div`
     align-items:center;    
     background-color:#fff;
     position:relative;
+
+   
+    bottom:25vh;
+   
+    width:45vw;
+    height:45vh;
+
+   button{
+
     bottom:75vh;
     width:45vw;
     height:50vh;
     left:50vw;
 `
 export const BtnSearch = styled.button`
+
        color:#fefefe;
        background-color: #353433;
        float:right;
@@ -86,6 +136,10 @@ export const BtnSearch = styled.button`
        outline:none;
        text-decoration:none;
        border:none;
+
+       transition: 1s ease-in-out
+   }
+
        margin-left:29vw;
        transition: 1s ease-in-out;
        
@@ -93,11 +147,19 @@ export const BtnSearch = styled.button`
            background-color:#ffc107;
            color:#353433;
        }
+
 `
 
 export const Taximg = styled.img`
     width:40vw;
+
+    height:auto;
+    position:relative;
+    top:45vh;
+    right:45vw
+
     margin-top:3vh;
+
 `
 
 export const InputBox = styled.input`
@@ -110,7 +172,13 @@ export const InputBox = styled.input`
         background-color:#D3D3D3;
         padding:1vw;
         opacity: 0.9;
+
+
+    }
+`
+
     }
     
 `
+
 

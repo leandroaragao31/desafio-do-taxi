@@ -86,8 +86,11 @@ export function Footer() {
 
 
     return (
+
         <S.Container>
             <S.Footer_section id='Contact'>
+        <S.Container id="Contact">
+            <S.Footer_section>
                 <S.BoxSocial>
                     <S.BoxAddress>
                         <h2>{titleaddress}</h2>

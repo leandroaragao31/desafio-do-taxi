@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -13,8 +14,6 @@ export const Footer_section = styled.section`
     align-items: center;
     width: 100%;
     padding-top: 40px;
-
-
     .CopyRight{
         display: flex;
         flex-direction: row;
@@ -28,14 +27,12 @@ export const Footer_section = styled.section`
         h2{
             font-weight: normal;
         }
-
         button{
             font-size: 21px;
             background-color: transparent;
             border: none;
             transition:0.7s;
             cursor:pointer;
-
             &:hover {
                 color:#FFC125;
             }
@@ -61,17 +58,14 @@ export const BoxAddress = styled.div`
     align-items: flex-start;
     width: 20%;
     margin: 0 2rem 0 2rem;
-
     h2{
         font-size: 2rem;
         font-weight: 100;
         text-transform: capitalize;
     }
-
     p{
         font-size: 18px;
     }
-
 `
 
 export const ContainerLinks = styled.div`
@@ -81,14 +75,11 @@ export const ContainerLinks = styled.div`
     align-items: flex-start;
     width: 20%;
     margin: 0 0 0 3rem;
-
     h2{
         font-size: 2rem;
         font-weight: 100;
         text-transform: capitalize;
     }
-
-
 `
 
 export const BoxLinks = styled.div`
@@ -97,12 +88,10 @@ export const BoxLinks = styled.div`
     justify-content: flex-start;
     align-items: center;
     width: 50%;
-
     img{
         margin: 0.500rem 0 0.100rem 0;
     }
     
-
     a{
         
         text-decoration: none;
@@ -110,13 +99,10 @@ export const BoxLinks = styled.div`
         font-size: 1rem;
         transition:0.7s;
         margin: 0.500rem 0 0.100rem 0;
-
         &:hover {
             color:#FFC125;
         }
-
     }
-
 `
 
 export const BoxNewsletter = styled.div`
@@ -126,7 +112,6 @@ export const BoxNewsletter = styled.div`
     align-items: flex-start;
     width: 20%;
     margin: 0 0 0 2rem;
-
     h2{
         width: 100%;
         font-size: 28px;
@@ -136,7 +121,6 @@ export const BoxNewsletter = styled.div`
         font-weight: 100;
         text-transform: capitalize;
     }
-
     input{
         width: 100%;
         font-size: 12pt;
@@ -147,7 +131,6 @@ export const BoxNewsletter = styled.div`
         border: 0px;
         font-family: 'Roboto', sans-serif;
     }
-
     button{
         width: 60%;
         font-size: 16pt;
@@ -160,12 +143,11 @@ export const BoxNewsletter = styled.div`
         font-weight: 600;
         border-radius: 5px;
         cursor:pointer;
-        transition: 1.5s ease-in-out;
+        transition:0.9s ease-in-out;
         &:hover{
-            background-color:#000;
+            background-color:#1a1a1a;
+            color:#FFC125;
         }
     }
-
     
-
 `

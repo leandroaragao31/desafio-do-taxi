@@ -1,9 +1,18 @@
+
 import React from 'react'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Slide } from '../SlideMain'
 
+
+
+
+
+
+
 export function Main() {
+
+
 
 
     const data = useStaticQuery(graphql`
@@ -66,13 +75,9 @@ export function Main() {
         titleuloaxfor,
         titletaxi,
         titlesecureand,
-
         titleourapptoday,
         titleour,
         titledownload,
-
-        titleour,
-
         titlecar3,
         titlecar2,
         titlecar1,
@@ -81,13 +86,13 @@ export function Main() {
         subtitlesecureand,
         subtitleactthat,
         imgtaxipequeno,
-
         imgsmartphone,
-
         imgsemaforo,
         imgpontotaxi,
         imgcarteira,
-        
+        imgcarrofundoamarelo,
+
+
     } = data.alldata.mains[0]
 
 
@@ -95,17 +100,9 @@ export function Main() {
 
 
     return (
-
         <S.Container id='Home'>
             < Slide />
             <S.SectionCardTaxi id='Taxi'>
-
-        <S.Container>
-            < Slide />
-            <S.Division>
-            </S.Division>
-            <S.SectionCardTaxi id="Taxi">
-
                 <S.ContainerCardTaxi>
                     <S.BoxTextCard>
                         <h2 className="h2branco">{titleour}</h2>
@@ -145,13 +142,8 @@ export function Main() {
                     </S.BoxCardsTaxi>
                 </S.ContainerCardTaxi>
             </S.SectionCardTaxi>
-
             <S.SectionInfoTaxis id='Booking'>
                 <S.ContainerinfoTaxis>
-
-            <S.SectionInfoTaxis>
-                <S.ContainerinfoTaxis id="Booking">
-
                     <S.BigBoxInfoTaxis>
                         <S.BoxTitleCardInfo>
                             <h2>{titlewhyride}</h2>

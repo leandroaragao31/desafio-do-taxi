@@ -25,15 +25,11 @@ export  function Header() {
     const {imglogo, btnhome, btntaxi, btnbooking, btncontactus} = data.alldata.headers[0]
 
     return (
-    <S.Container id="#">
+    <S.Container>
       <S.LogoHeader src={imglogo.url} alt="logo-header" />
       <S.Menu>
           <S.Menu>
-
               <S.Link href="#Home" alt="">
-
-              <S.Link href="#" alt="">
-
                   <li>{btnhome}</li>
               </S.Link>
               <S.Link href="#Taxi" alt="">

@@ -1,12 +1,12 @@
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "desafio-do-taxi",
+    title: "projecttaxi",
   },
   plugins: [
     "gatsby-plugin-styled-components",
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-smoothscroll`,
     {
       resolve: "gatsby-source-graphql",
       options: {

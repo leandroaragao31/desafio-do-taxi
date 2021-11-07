@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.div`
     display:flex;
     justify-content:space-around;
     background-color:#1a1a1a;
     width:100%;
-    height:10vh;
+    height:11vh;
     padding-top:10px;
     padding-bottom:10px;
     float:left;
@@ -39,6 +39,5 @@ export const Link = styled.a`
     transition:0.7s;
     &:hover{
         color:#FFC125;
-
     }
 `

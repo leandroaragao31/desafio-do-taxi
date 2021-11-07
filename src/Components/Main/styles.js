@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
     width: 100%;
     padding-top: 71px;
-
 `
 
 export const SectionSlide = styled.section`
@@ -14,7 +13,6 @@ export const SectionSlide = styled.section`
     color: #fff;
     
     
-
 `
 
 export const ContainerSectionSlide = styled.div`
@@ -22,7 +20,6 @@ export const ContainerSectionSlide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 export const BoxSlide = styled.div`
@@ -32,8 +29,6 @@ export const BoxSlide = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
     .BoxYellow{
         width: 30%;
         height: 10rem;
@@ -45,7 +40,6 @@ export const BoxSlide = styled.div`
         position: absolute;
         bottom: 70%;
         left: 21%;
-
         .TextBOOK{
             font-size:35px;
             text-transform: uppercase;
@@ -53,7 +47,6 @@ export const BoxSlide = styled.div`
             font-family: 'Nunito Sans', sans-serif;
             padding-bottom: 1rem;
         }
-
         .Number{
             color: #000;
             font-size:40px;
@@ -62,11 +55,9 @@ export const BoxSlide = styled.div`
             font-family: 'Nunito Sans', sans-serif;
         }
     }
-
     .SlideBox{
         width: 30%;
     }
-
 `
 
 export const BoxInputs = styled.div`
@@ -76,16 +67,12 @@ export const BoxInputs = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
     h2{
         font-size: 25px; 
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 200;
         margin: 2rem 0 2rem 0;
     }
-
     .BoxSearch{
         width: 90%;
         display: flex;
@@ -95,17 +82,13 @@ export const BoxInputs = styled.div`
         background-color: #fff;
         padding-bottom: 2rem;
         
-
         span{
             color: #000;
             font-size: 30px; 
             font-family: 'Nunito Sans', sans-serif;
             font-weight: 200;
             padding: 20px 6px 6px 6px;
-
         }
-
-
         input{
             background: #e1e1e1;
             border-bottom: 1px solid #fffcf4;
@@ -121,12 +104,8 @@ export const BoxInputs = styled.div`
             border-radius: 5px;
             display: block;
         }
-
         .BoxButton{
-
             width: 100%;
-
-
             button{
             width: 25%;
             float: right;
@@ -141,7 +120,6 @@ export const BoxInputs = styled.div`
             transition: all .3s ease-in-out;
             text-transform: uppercase;
             cursor: pointer;
-
             &:hover{
                 background-color: #f8ca11;
                 }
@@ -149,7 +127,6 @@ export const BoxInputs = styled.div`
         }
         
     }
-
 `
 
 export const SectionCardTaxi = styled.section`
@@ -180,28 +157,22 @@ export const BoxTextCard = styled.div`
     text-transform: capitalize;
     font-size: 2rem;
     
-
     .h2branco{
         color: #fff;
         margin-right: 1rem;
     }
-
     .h2amarelo{
         color: #f4db31;
     }
-
-
     
 `
 
 export const BoxCardsTaxi = styled.div`
-
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     
-
 `
 
 export const CardTaxi = styled.div`
@@ -212,12 +183,13 @@ export const CardTaxi = styled.div`
     align-items: center;
     background-color: #fff;
     position: relative;
+    transition:1s ease;
+    cursor: pointer;
     font-family: 'Nunito Sans', sans-serif;
-
-
+    &:hover{
+        transform: scale(105%)
+    }
     
-
-
     .CirculoAmarelo{
         color: #fff;
         display: flex;
@@ -229,33 +201,27 @@ export const CardTaxi = styled.div`
         border-radius: 50px;
         position: relative;
         bottom: 35px;
-
     }
-
     .Boxtext{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
-
         h2{
             font-size: 1.600rem;
             text-transform: uppercase;
         }
-
         p{
             width: 80%;
             text-align: center;
             font-weight: lighter;
             font-size: 1.200rem;
         }
-
         div{
             width: 100%;
         }
     }
-
 `
 
 export const SectionInfoTaxis = styled.section`
@@ -270,7 +236,6 @@ export const ContainerinfoTaxis = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 export const BoxTitleCardInfo = styled.div`
@@ -285,7 +250,6 @@ export const BoxTitleCardInfo = styled.div`
     margin: 4rem 0 4rem 0;
     position: relative;
     text-transform: capitalize;
-
     &:before {
         content: '';
         position: absolute;
@@ -294,7 +258,6 @@ export const BoxTitleCardInfo = styled.div`
         height: 1px;
         top: 5.5rem;
     }
-
     
 `
 
@@ -305,11 +268,9 @@ export const BigBoxInfoTaxis = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 `
 
 export const BoxCardsInfo = styled.div`
-
 `
 
 export const CardsInfoTaxis1 = styled.div`
@@ -317,23 +278,19 @@ export const CardsInfoTaxis1 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
     .BoxTextinfos1{
         margin-left: 3.500rem;
-
         h2:first-letter{
             font-size: 30px;
             font-family: 'Roboto', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
         }
-
         h2{
             font-size: 24px;
             font-family: 'Roboto', sans-serif; 
             font-weight: 100;
         }
-
         p{
             width: 100%;
             font-size: 16px;
@@ -341,7 +298,6 @@ export const CardsInfoTaxis1 = styled.div`
             font-weight: 100;
            
         }
-
         button{
             border: transparent;
             width: 20%;
@@ -352,47 +308,38 @@ export const CardsInfoTaxis1 = styled.div`
             text-align: center;
             padding: 10px 0px;
             margin-top: 30px;
-            transition:  0.8s ease-in-out;
+            transition: all .3s ease-in-out;
             text-transform: uppercase;
             cursor: pointer;
-
             &:hover {
                 background-color: #000
             }
         }
-
     }
 `
 
 export const CardsInfoTaxis2 = styled.div`
-
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-
     .BoxTextinfos2{
         margin-right: 3.500rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-
-
         h2:first-letter{
             font-size: 30px;
             font-family: 'Roboto', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
-
         }
-
         h2{
             font-size: 24px;
             font-family: 'Roboto', sans-serif; 
             font-weight: 100;
         }
-
         p{
             
             
@@ -402,7 +349,6 @@ export const CardsInfoTaxis2 = styled.div`
             font-weight: 100;
            
         }
-
         
         button{
             border: transparent;
@@ -414,17 +360,15 @@ export const CardsInfoTaxis2 = styled.div`
             text-align: center;
             padding: 10px 0px;
             margin-top: 30px;
-            transition:  0.9s ease-in-out;
+            transition: all .3s ease-in-out;
             text-transform: uppercase;
             cursor: pointer;
-
             &:hover {
                 background-color: #000
             }
         }
     }
 `
-
 
 export const SectionPhone = styled.div`
     width: 100%;
@@ -433,7 +377,6 @@ export const SectionPhone = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 export const ContainerImG = styled.div`
@@ -445,9 +388,6 @@ export const ContainerImG = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(${prop => prop.back});
-
-
-
     .BoxText{
        
         
@@ -465,9 +405,6 @@ export const ContainerImG = styled.div`
             flex-direction: column;
             
             align-items: flex-start;
-
-
-
         .TextBlack{
             font-size: 50px;
             color: #000;
@@ -483,10 +420,7 @@ export const ContainerImG = styled.div`
     }
     
 }
-
         
-
-
     .BoxPhone{
         width: 30%;
         display: flex;
@@ -494,10 +428,4 @@ export const ContainerImG = styled.div`
         align-items: center;
         
     }
-
-export const Division = styled.div`
-    background-color:#fff;
-    width:100%;
-    height:15vh;
-
 `

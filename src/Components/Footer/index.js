@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './styles'
@@ -86,11 +87,8 @@ export function Footer() {
 
 
     return (
-
         <S.Container>
             <S.Footer_section id='Contact'>
-        <S.Container id="Contact">
-            <S.Footer_section>
                 <S.BoxSocial>
                     <S.BoxAddress>
                         <h2>{titleaddress}</h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql,  useStaticQuery } from 'gatsby';
 import * as S from './styles'
+import { Slide } from '../SlideMain/index'
 
 
 
@@ -25,6 +26,7 @@ export  function Header() {
     const {imglogo, btnhome, btntaxi, btnbooking, btncontactus} = data.alldata.headers[0]
 
     return (
+        <>
     <S.Container>
       <S.LogoHeader src={imglogo.url} alt="logo-header" />
       <S.Menu>
@@ -44,5 +46,7 @@ export  function Header() {
           </S.Menu>
       </S.Menu>
     </S.Container>
+    
+    </>
   );
 }

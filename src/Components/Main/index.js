@@ -10,6 +10,7 @@ import { Slide } from '../SlideMain'
 
 
 
+
 export function Main() {
 
 
@@ -101,7 +102,7 @@ export function Main() {
 
     return (
         <S.Container id='Home'>
-            < Slide />
+            <Slide />
             <S.SectionCardTaxi id='Taxi'>
                 <S.ContainerCardTaxi>
                     <S.BoxTextCard>
@@ -115,7 +116,7 @@ export function Main() {
                                 <h2>{titlecar1}</h2>
                                 <p>{subtitleactthat}</p>
                                 <div>
-                                    <img style={{ width: "100%" }} src={imgtaxipequeno.url} alt="" />
+                                    <img style={{ width: "100%",  }} src={imgtaxipequeno.url} alt="" />
                                 </div>
                             </div>
                         </S.CardTaxi>

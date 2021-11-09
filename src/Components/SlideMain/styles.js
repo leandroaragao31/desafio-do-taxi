@@ -35,21 +35,21 @@ export const TitleContainer = styled.div`
     align-items:center;
     justify-content:center;
     padding:2vw;
-    width:30vw;
-    height:20vh;
+    width:32vw;
+    height:23vh;
 
 
     p{
         color:#000;
-        
         font-size:2.5vw;
-        margin-top:2vh;
-
+        margin-top:1vh;
+        
     }
 
     h2{
         font-size:3.4vw;
         font-weight:100;
+        text-transform:capitalize;
     }
     
     figure{

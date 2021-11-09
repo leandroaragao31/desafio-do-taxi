@@ -152,9 +152,9 @@ export function Main() {
                         </S.BoxTitleCardInfo>
                         <S.BoxCardsInfo>
                             <S.CardsInfoTaxis1>
-                                <div>
-                                    <img src={imgcarteira.url} alt="" />
-                                </div>
+                                <figure>
+                                    <S.ImgCard src={imgcarteira.url} alt="" />
+                                </figure>
                                 <div class="BoxTextinfos1">
                                     <h2>{titleuloaxfor}</h2>
                                     <p>{subtitleuloaxfor}</p>
@@ -162,9 +162,9 @@ export function Main() {
                                 </div>
                             </S.CardsInfoTaxis1>
                             <S.CardsInfoTaxis2>
-                                <div>
-                                    <img src={imgpontotaxi.url} alt="" />
-                                </div>
+                                <figure>
+                                    <S.ImgCard src={imgpontotaxi.url} alt="" />
+                                </figure>
                                 <div class="BoxTextinfos2">
                                     <h2>{titlesecureand}</h2>
                                     <p>{subtitlesecureand}</p>
@@ -172,9 +172,9 @@ export function Main() {
                                 </div>
                             </S.CardsInfoTaxis2>
                             <S.CardsInfoTaxis1>
-                                <div>
-                                    <img src={imgsemaforo.url} alt="" />
-                                </div>
+                                <figure>
+                                    <S.ImgCard src={imgsemaforo.url} alt="" />
+                                </figure>
                                 <div class="BoxTextinfos1">
                                     <h2>{titleuloaxfor}</h2>
                                     <p>{subtitleuloaxfor}</p>
@@ -182,9 +182,9 @@ export function Main() {
                                 </div>
                             </S.CardsInfoTaxis1>
                             <S.CardsInfoTaxis2>
-                                <div>
-                                    <img src={imgsemaforo.url} alt="" />
-                                </div>
+                                <figure>
+                                    <S.ImgCard src={imgsemaforo.url} alt="" />
+                                </figure>
                                 <div className="BoxTextinfos2">
                                     <h2>{titlesecureand}</h2>
                                     <p>{subtitlesecureand}</p>

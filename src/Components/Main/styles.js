@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 
 export const Container = styled.div`
@@ -187,7 +187,11 @@ export const CardTaxi = styled.div`
     cursor: pointer;
     font-family: 'Nunito Sans', sans-serif;
     &:hover{
-        transform: scale(105%)
+        transform: scale(110%);
+        -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, 
+        red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, 
+        #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
     }
     
     .CirculoAmarelo{
@@ -315,7 +319,29 @@ export const CardsInfoTaxis1 = styled.div`
                 background-color: #000
             }
         }
+
     }
+`
+const rotate = keyframes`
+    from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const ImgCard = styled.img`
+            transition: 1s ease-in-out;
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            &:hover{
+                transform: scale(120%);
+                animation: ${rotate} 0.5s linear;
+
+            }
+        
 `
 
 export const CardsInfoTaxis2 = styled.div`

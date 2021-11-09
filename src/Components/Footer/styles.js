@@ -64,7 +64,7 @@ export const BoxAddress = styled.div`
         text-transform: capitalize;
     }
     p{
-        font-size: 18px;
+        font-size: 1.4vw;
     }
 `
 
@@ -84,12 +84,15 @@ export const ContainerLinks = styled.div`
 
 export const BoxLinks = styled.div`
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    padding:3px;
+    text-transform:capitalize;
+    width: 60%;
     img{
         margin: 0.500rem 0 0.100rem 0;
+
+        
     }
     
     a{
@@ -99,6 +102,7 @@ export const BoxLinks = styled.div`
         font-size: 1rem;
         transition:0.7s;
         margin: 0.500rem 0 0.100rem 0;
+        margin-left:0.5vw;
         &:hover {
             color:#FFC125;
         }
